@@ -5,19 +5,20 @@
   --secondary-color: #a7c6c2;
   --light-color: #f3f3f3;
   --dark-color: #333;
-  --max-width: 1100px;
+  /* --max-width: 1100px; */
 }
 
 body {
   min-height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .page {
   min-height: 100vh;
-  border: 1px solid black;
+  max-width: 100vw;
+  /* border: 1px solid black; */
   position: relative;
-  margin: auto;
+  /* margin: auto; */
 }
 
 /*********************** Navbar ***********************/
@@ -110,7 +111,63 @@ body {
   color: var(--dark-color);
   font-size: 3.5rem;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   bottom: 1rem;
   left: 50%;
+}
+
+/*********************** page 2 ***********************/
+.page2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  /* grid-template-areas:
+    "nav nav nav nav nav nav nav nav"
+    "film film film film film film film film"; */
+  /* grid-template-columns: repeat(8, 1fr); */
+  /* grid-template-rows: repeat(10, 1fr); */
+  width: 100%;
+  height: 100vh;
+  background: var(--primary-color);
+}
+
+/* .page2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--light-color);
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+} */
+
+.page2__film--right {
+  background: url(../assets/img/imgbin_filmstrip-film-frame-2-png.png) repeat-y
+    left center/ contain;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  /* display: grid;
+  grid-template-rows: repeat(7, 1fr); */
+  /* grid-row: 1 / span 10; */
+  padding: 0 2.5rem;
+  width: 18.3rem;
+
+  /* grid-column: 1 / span 1; */
+  /* overflow: hidden; */
+  /* z-index: 2; */
+}
+
+.page2__film--right--bg {
+  background: #3a383a;
+}
+
+img {
+  /* padding: 0.3rem 0; */
+  /* margin: 0 2.1rem; */
+  padding: 0.2rem 0;
+  border-radius: 10%;
+  height: 13.2rem;
+  width: 13.3rem;
 }
