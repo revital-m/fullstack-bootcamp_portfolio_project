@@ -446,10 +446,10 @@ body {
     no-repeat center center/cover;
 }
 
-/* .page3__followMe a i {
-  justify-self: flex-end;
-  align-self: flex-end;
+.page3__followMe {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-} */
+  bottom: 1rem;
+  left: 45%;
+  /* background: var(--secondary-color);
+  opacity: 0.5; */
+}
