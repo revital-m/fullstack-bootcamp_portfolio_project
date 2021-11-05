@@ -310,9 +310,21 @@ body {
   background: var(--light-blue-color);
 }
 
+.container {
+  display: grid;
+  max-width: 1100px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+  overflow: hidden;
+  height: 100%;
+}
+
 .card {
-  height: 50vh;
-  width: 35vh;
+  position: relative;
+  height: 22rem;
+  width: 20rem;
   background: #e3eceb;
   border-radius: 1.5rem;
   box-shadow: 5px 5px 20px #b1c9c6;
@@ -322,11 +334,41 @@ body {
   align-items: center;
   text-align: center;
   overflow: hidden;
+
+  /* animation */
+  /* transform: skewY(-10deg); */
+  /* transform: skew(10deg); */
+  /* transform: translateX(0) translateY(0); */
+  transition: all 2s ease-in-out;
+  transform: scale(1);
+}
+
+/* .card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40rem;
+  width: 25rem;
+  background: #e3eceb;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 20px #b1c9c6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+} */
+
+.card:hover {
+  height: 40rem;
+  width: 25rem;
+  /* transform: scale(2); */
+  z-index: 10;
 }
 
 .page3__card--img {
-  background: url("../assets/img/progremming/chris-ried-ieic5Tq8YMk-unsplash.jpg")
-    no-repeat center center/cover;
   height: 50%;
   width: 100%;
 }
@@ -353,3 +395,61 @@ body {
   top: 9.8rem;
   right: 0;
 }
+
+.page3__card-1 .page3__card--img {
+  background: url("../assets/img/progremming/chris-ried-ieic5Tq8YMk-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+.page3__card-2 .page3__card--img {
+  background: url("../assets/img/progremming/clement-helardot-95YRwf6CNw8-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+.page3__card-3 .page3__card--img {
+  background: url("../assets/img/progremming/goran-ivos-T8LMIN09-mo-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+.page3__card-4 .page3__card--img {
+  background: url("../assets/img/progremming/joshua-sortino-LqKhnDzSF-8-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+.page3__card-5 .page3__card--img {
+  background: url("../assets/img/progremming/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+.page3__card-6 .page3__card--img {
+  background: url("../assets/img/progremming/markus-spiske-iar-afB0QQw-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+.page3__card-7 .page3__card--img {
+  background: url("../assets/img/progremming/nasa-Q1p7bh3SHj8-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+.page3__card-8 .page3__card--img {
+  background: url("../assets/img/progremming/sean-lim-NPlv2pkYoUA-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+.page3__card-9 .page3__card--img {
+  background: url("../assets/img/progremming/thought-catalog-505eectW54k-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+.page3__card-10 .page3__card--img {
+  background: url("../assets/img/progremming/timothy-dykes-LhqLdDPcSV8-unsplash.jpg")
+    no-repeat center center/cover;
+}
+
+/* .page3__followMe a i {
+  justify-self: flex-end;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+} */
