@@ -19,6 +19,30 @@ body {
   position: relative;
 }
 
+/* Follow Me */
+.followMe {
+  z-index: 1;
+}
+
+.followMe a i {
+  color: var(--dark-color);
+  padding: 3rem 1rem 1rem 1rem;
+  z-index: 1;
+}
+
+.arrow {
+  z-index: 1;
+}
+
+.arrow i {
+  color: var(--dark-color);
+  font-size: 3.5rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+}
+
 /*********************** Navbar ***********************/
 .navbar {
   display: flex;
@@ -90,30 +114,6 @@ body {
   z-index: 1;
 }
 
-/* Follow Me */
-.followMe {
-  z-index: 1;
-}
-
-.followMe a i {
-  color: var(--dark-color);
-  padding: 3rem 1rem 1rem 1rem;
-  z-index: 1;
-}
-
-.arrow {
-  z-index: 1;
-}
-
-.arrow i {
-  color: var(--dark-color);
-  font-size: 3.5rem;
-  cursor: pointer;
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-}
-
 /*********************** page 2 ***********************/
 .page2 {
   position: relative;
@@ -135,6 +135,7 @@ body {
   opacity: 0.3;
 }
 
+/******** page 2 film right & left ********/
 .page2__film--right,
 .page2__film--left {
   padding: 0 2.5rem;
@@ -148,7 +149,7 @@ body {
 }
 
 .page2__film--left {
-  background: url(../assets/img/imgbin_filmstrip-film-frame-2-png.png) repeat-y
+  background: url(../assets/img/imgbin_filmstrip-film-frame-3-png.png) repeat-y
     right center/ contain;
 }
 
@@ -172,8 +173,116 @@ body {
   animation-delay: 5s;
 }
 
-@keyframes film {
+/* @keyframes film {
   to {
     transform: translateY(-1550%);
   }
+} */
+
+/******* page 2 main *******/
+.page2__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page2__main .page2__main--profile_img {
+  background: url("../assets/img/profile_img.jpg") no-repeat center center/cover;
+  height: 42vh;
+  width: 26vw;
+  border-radius: 1.5rem;
+  margin-top: 5rem;
+  z-index: 2;
+}
+
+.page2__main > p {
+  padding: 4rem 16rem;
+  font-size: 2.2rem;
+  text-align: center;
+  z-index: 2;
+}
+
+/****** page 2 main btn ******/
+.page2__main__about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+  z-index: 2;
+}
+
+.page2__main__about--btn1 p,
+.page2__main__about--btn2 p {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 0 8vw;
+  width: 15vw;
+  background: var(--secondary-color);
+  border: 0.2rem var(--primary-color-dark) solid;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.page2__main__about--btn1 p:hover,
+.page2__main__about--btn2 p:hover {
+  cursor: pointer;
+}
+
+.page2__main__about--btn1 p::before,
+.page2__main__about--btn2 p::before {
+  --scale: 0;
+  position: absolute;
+  top: -0.2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+  transition: transform 1s ease-in-out;
+  transform-origin: bottom center;
+}
+
+.page2__main__about--btn1 p::before {
+  content: attr(data-p);
+  height: 52vh;
+  width: 66vw;
+  position: absolute;
+  top: -2vh;
+  left: 48vh;
+  background: var(--primary-color-dark);
+  border-radius: 1.5rem;
+  color: var(--dark-color);
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+  line-height: 1.4;
+  padding: 5rem 4rem;
+}
+
+.page2__main__about--btn2 p::before {
+  content: attr(data-p);
+  height: 52vh;
+  width: 66vw;
+  position: absolute;
+  top: -2vh;
+  left: -18vh;
+  background: var(--primary-color-dark);
+  border-radius: 1.5rem;
+  color: var(--dark-color);
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+  line-height: 1.4;
+  padding: 5rem 4rem;
+}
+
+.page2__main__about--btn1 p:hover:before,
+.page2__main__about--btn2 p:hover:before {
+  --scale: 1;
 }
