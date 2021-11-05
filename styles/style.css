@@ -16,9 +16,7 @@ body {
 .page {
   min-height: 100vh;
   max-width: 100vw;
-  /* border: 1px solid black; */
   position: relative;
-  /* margin: auto; */
 }
 
 /*********************** Navbar ***********************/
@@ -121,17 +119,12 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
-  /* grid-template-areas:
-    "nav nav nav nav nav nav nav nav"
-    "film film film film film film film film"; */
-  /* grid-template-columns: repeat(8, 1fr); */
-  /* grid-template-rows: repeat(10, 1fr); */
   width: 100%;
   height: 100vh;
   background: var(--primary-color);
 }
 
-/* .page2::after {
+.page2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -139,35 +132,48 @@ body {
   background: var(--light-color);
   height: 100%;
   width: 100%;
-  opacity: 0.5;
-} */
+  opacity: 0.3;
+}
+
+.page2__film--right,
+.page2__film--left {
+  padding: 0 2.5rem;
+  width: 18.3rem;
+  overflow: hidden;
+}
 
 .page2__film--right {
   background: url(../assets/img/imgbin_filmstrip-film-frame-2-png.png) repeat-y
     left center/ contain;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  /* display: grid;
-  grid-template-rows: repeat(7, 1fr); */
-  /* grid-row: 1 / span 10; */
-  padding: 0 2.5rem;
-  width: 18.3rem;
-
-  /* grid-column: 1 / span 1; */
-  /* overflow: hidden; */
-  /* z-index: 2; */
 }
 
-.page2__film--right--bg {
+.page2__film--left {
+  background: url(../assets/img/imgbin_filmstrip-film-frame-2-png.png) repeat-y
+    right center/ contain;
+}
+
+.page2__film--right--bg,
+.page2__film--left--bg {
   background: #3a383a;
 }
 
-img {
-  /* padding: 0.3rem 0; */
-  /* margin: 0 2.1rem; */
+.page2 .page2__film--right .page2__film--right--bg img,
+.page2 .page2__film--left .page2__film--left--bg img {
   padding: 0.2rem 0;
   border-radius: 10%;
   height: 13.2rem;
   width: 13.3rem;
+  transform: translateY(0);
+  animation-name: film;
+  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+}
+
+@keyframes film {
+  to {
+    transform: translateY(-1550%);
+  }
 }
