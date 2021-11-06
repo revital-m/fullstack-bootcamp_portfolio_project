@@ -157,13 +157,13 @@
 
   /******** page 2 film bottom********/
   .page2__film--left {
-    padding: 1.5rem 0;
+    padding: 1.3rem 0;
     margin-bottom: 1.5rem;
     width: 795vw;
     height: 12rem;
   }
   .page2__film--left--bg {
-    height: 7.8rem;
+    height: 8rem;
   }
 
   .page2 .page2__film--left .page2__film--left--bg img {
@@ -265,10 +265,10 @@
 
   /******** page 2 film bottom********/
   .page2__film--left {
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     margin-bottom: 1rem;
     width: 795vw;
-    height: 10rem;
+    height: 9.8rem;
   }
   .page2__film--left--bg {
     height: 6.5rem;
