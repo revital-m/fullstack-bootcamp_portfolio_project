@@ -295,12 +295,12 @@ body {
   text-align: center;
   overflow: hidden;
   cursor: pointer;
+  transition: all 1s ease-in-out;
 }
 
 .card:hover {
   height: 40rem;
   width: 25rem;
-  transition: all 1s ease-in-out;
 }
 
 .page3__card--img {
