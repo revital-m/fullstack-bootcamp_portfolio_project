@@ -44,79 +44,6 @@ body {
   left: 50%;
 }
 
-/*********************** Navbar ***********************/
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 1rem 2rem;
-  background: var(--secondary-color);
-  opacity: 0.8;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.navbar h1 {
-  color: var(--light-color);
-  font-size: 2.2rem;
-  padding-left: 1.8rem;
-}
-
-.navbar .navbar__links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
-  opacity: 0.8;
-}
-
-.navbar .navbar__links a {
-  color: var(--light-color);
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding-top: 1.7rem;
-  text-align: center;
-  position: relative;
-  z-index: 10;
-}
-
-.navbar .navbar__links a::after {
-  content: "";
-  position: absolute;
-  top: 0.8rem;
-  left: 0;
-  height: 6%;
-  width: 100%;
-  background: #a7c2bf;
-}
-
-.navbar .navbar__links a::before {
-  content: "";
-  position: absolute;
-  top: 4.5rem;
-  left: 0;
-  height: 6%;
-  width: 100%;
-  background: #a7c2bf;
-}
-
-.navbar__links--border::after {
-  transform: scale(0, 1);
-  transform-origin: 0% 100%;
-  transition: transform 0.5s ease;
-}
-.navbar__links--border::before {
-  transform: scale(0, 1);
-  transform-origin: 100% 0%;
-  transition: transform 0.5s ease;
-}
-
-.navbar__links--border:hover:after,
-.navbar__links--border:hover:before {
-  transform: scale(1, 1);
-}
-
 /*********************** page 1 ***********************/
 .page1 {
   position: relative;
@@ -215,11 +142,11 @@ body {
   animation-delay: 5s;
 }
 
-@keyframes film {
+/* @keyframes film {
   to {
     transform: translateY(-4135%);
   }
-}
+} */
 
 /******* page 2 main *******/
 .page2__main {
@@ -349,13 +276,11 @@ body {
   background: var(--light-blue-color);
 }
 
-.container {
+.page3__container {
   display: grid;
-  max-width: 1100px;
+  max-width: 90vw;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
-  /* justify-content: center; */
-  /* align-items: center; */
   overflow: hidden;
   height: 100%;
 }
@@ -374,34 +299,12 @@ body {
   text-align: center;
   overflow: hidden;
   cursor: pointer;
-
-  /* transform: scale(1); */
 }
-
-/* .card::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 40rem;
-  width: 25rem;
-  background: #e3eceb;
-  border-radius: 1.5rem;
-  box-shadow: 5px 5px 20px #b1c9c6;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-} */
 
 .card:hover {
   height: 40rem;
   width: 25rem;
   transition: all 1s ease-in-out;
-  /* transform: scale(2); */
-  /* z-index: 10; */
 }
 
 .page3__card--img {
@@ -432,7 +335,7 @@ body {
   right: 0;
 }
 
-.page3__card-1 .page3__card--img {
+/* .page3__card-1 .page3__card--img {
   background: url("../assets/img/progremming/chris-ried-ieic5Tq8YMk-unsplash.jpg")
     no-repeat center center/cover;
 }
@@ -480,12 +383,10 @@ body {
 .page3__card-10 .page3__card--img {
   background: url("../assets/img/progremming/timothy-dykes-LhqLdDPcSV8-unsplash.jpg")
     no-repeat center center/cover;
-}
+} */
 
 .page3__followMe {
   position: absolute;
   bottom: 1rem;
   left: 45%;
-  /* background: var(--secondary-color);
-  opacity: 0.5; */
 }

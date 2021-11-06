@@ -11,7 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/my_normalize.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 769px)"
+      href="./styles/media.css"
+    />
     <title>My Portfolio</title>
   </head>
   <body id="home">
@@ -24,6 +30,22 @@
           <a class="navbar__links--border" href="#projects">Projects</a>
           <a class="navbar__links--border" href="#contact">Contact</a>
         </nav>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
+          <div class="humburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <section class="page page1">
         <h1>Welcome To My Website!</h1>
@@ -58,9 +80,9 @@
           <img src="./assets/img/travel/nyc-1.jpg" alt="NYC" />
           <img src="./assets/img/travel/paris-1.jpg" alt="Paris" />
           <!-- <img
-            src="./assets/img/travel/san-francisco-1.jpg"
-            alt="San-Francisco"
-          /> -->
+              src="./assets/img/travel/san-francisco-1.jpg"
+              alt="San-Francisco"
+            /> -->
           <img src="./assets/img/travel/boston-1.jpg" alt="Boston" />
           <img src="./assets/img/travel/nyc-5.jpg" alt="NYC" />
           <img src="./assets/img/travel/chicago-1.jpg" alt="Chicago" />
@@ -132,56 +154,64 @@
         </p>
         <div class="page2__main__about">
           <div class="page2__main__about--btn1">
-            <p data-p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            assumenda saepe alias asperiores, corporis aliquam dicta mollitia
-            possimus sunt ipsa temporibus enim quae? Atque voluptates error,
-            est magni consequatur odio fugiat maiores quaerat recusandae
-            perspiciatis nulla rem illo corporis facere dolorum cupiditate
-            earum unde velit fuga modi. Veritatis quos iusto illo porro ipsa
-            esse, ipsam voluptatibus doloremque fuga assumenda obcaecati
-            provident, aspernatur quis pariatur perspiciatis autem velit
-            expedita voluptas hic beatae eaque iste molestiae reprehenderit!
-            Quisquam repellendus repudiandae neque facilis dolore quis quos
-            consequuntur similique nisi! Sapiente dolores libero id blanditiis
-            quod mollitia neque minima labore distinctio harum pariatur in
-            eius, animi ab? Nihil minima suscipit impedit. Aliquam impedit
-            accusantium recusandae animi ipsum vitae corporis dolorum
-            consequatur id dolore, earum, sunt eligendi! Laborum voluptas
-            recusandae voluptate! Veritatis vero tempore odio quas expedita,
-            quos nostrum iusto officia aliquid beatae obcaecati eius
-            voluptatum rem tempora, dignissimos odit in delectus, reiciendis
-            eaque? Hic qui quasi quam minus molestias ullam dolor magni est
-            autem nesciunt! Debitis repellat eligendi error sapiente suscipit
-            odit pariatur fugiat nulla, praesentium itaque mollitia id? Ea
-            harum quaerat, cupiditate pariatur tempora eos corrupti enim optio
-            modi nesciunt, at suscipit, esse quibusdam officiis dignissimos
-            aliquid quae sint saepe magnam minus voluptatibus.">Skills</p>
+            <p
+              data-p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              assumenda saepe alias asperiores, corporis aliquam dicta mollitia
+              possimus sunt ipsa temporibus enim quae? Atque voluptates error,
+              est magni consequatur odio fugiat maiores quaerat recusandae
+              perspiciatis nulla rem illo corporis facere dolorum cupiditate
+              earum unde velit fuga modi. Veritatis quos iusto illo porro ipsa
+              esse, ipsam voluptatibus doloremque fuga assumenda obcaecati
+              provident, aspernatur quis pariatur perspiciatis autem velit
+              expedita voluptas hic beatae eaque iste molestiae reprehenderit!
+              Quisquam repellendus repudiandae neque facilis dolore quis quos
+              consequuntur similique nisi! Sapiente dolores libero id blanditiis
+              quod mollitia neque minima labore distinctio harum pariatur in
+              eius, animi ab? Nihil minima suscipit impedit. Aliquam impedit
+              accusantium recusandae animi ipsum vitae corporis dolorum
+              consequatur id dolore, earum, sunt eligendi! Laborum voluptas
+              recusandae voluptate! Veritatis vero tempore odio quas expedita,
+              quos nostrum iusto officia aliquid beatae obcaecati eius
+              voluptatum rem tempora, dignissimos odit in delectus, reiciendis
+              eaque? Hic qui quasi quam minus molestias ullam dolor magni est
+              autem nesciunt! Debitis repellat eligendi error sapiente suscipit
+              odit pariatur fugiat nulla, praesentium itaque mollitia id? Ea
+              harum quaerat, cupiditate pariatur tempora eos corrupti enim optio
+              modi nesciunt, at suscipit, esse quibusdam officiis dignissimos
+              aliquid quae sint saepe magnam minus voluptatibus."
+            >
+              Skills
+            </p>
           </div>
           <div class="page2__main__about--btn2">
-            <p data-p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            assumenda saepe alias asperiores, corporis aliquam dicta mollitia
-            possimus sunt ipsa temporibus enim quae? Atque voluptates error,
-            est magni consequatur odio fugiat maiores quaerat recusandae
-            perspiciatis nulla rem illo corporis facere dolorum cupiditate
-            earum unde velit fuga modi. Veritatis quos iusto illo porro ipsa
-            esse, ipsam voluptatibus doloremque fuga assumenda obcaecati
-            provident, aspernatur quis pariatur perspiciatis autem velit
-            expedita voluptas hic beatae eaque iste molestiae reprehenderit!
-            Quisquam repellendus repudiandae neque facilis dolore quis quos
-            consequuntur similique nisi! Sapiente dolores libero id blanditiis
-            quod mollitia neque minima labore distinctio harum pariatur in
-            eius, animi ab? Nihil minima suscipit impedit. Aliquam impedit
-            accusantium recusandae animi ipsum vitae corporis dolorum
-            consequatur id dolore, earum, sunt eligendi! Laborum voluptas
-            recusandae voluptate! Veritatis vero tempore odio quas expedita,
-            quos nostrum iusto officia aliquid beatae obcaecati eius
-            voluptatum rem tempora, dignissimos odit in delectus, reiciendis
-            eaque? Hic qui quasi quam minus molestias ullam dolor magni est
-            autem nesciunt! Debitis repellat eligendi error sapiente suscipit
-            odit pariatur fugiat nulla, praesentium itaque mollitia id? Ea
-            harum quaerat, cupiditate pariatur tempora eos corrupti enim optio
-            modi nesciunt, at suscipit, esse quibusdam officiis dignissimos
-            aliquid quae sint saepe magnam minus voluptatibus.">Employment History</p>
+            <p
+              data-p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              assumenda saepe alias asperiores, corporis aliquam dicta mollitia
+              possimus sunt ipsa temporibus enim quae? Atque voluptates error,
+              est magni consequatur odio fugiat maiores quaerat recusandae
+              perspiciatis nulla rem illo corporis facere dolorum cupiditate
+              earum unde velit fuga modi. Veritatis quos iusto illo porro ipsa
+              esse, ipsam voluptatibus doloremque fuga assumenda obcaecati
+              provident, aspernatur quis pariatur perspiciatis autem velit
+              expedita voluptas hic beatae eaque iste molestiae reprehenderit!
+              Quisquam repellendus repudiandae neque facilis dolore quis quos
+              consequuntur similique nisi! Sapiente dolores libero id blanditiis
+              quod mollitia neque minima labore distinctio harum pariatur in
+              eius, animi ab? Nihil minima suscipit impedit. Aliquam impedit
+              accusantium recusandae animi ipsum vitae corporis dolorum
+              consequatur id dolore, earum, sunt eligendi! Laborum voluptas
+              recusandae voluptate! Veritatis vero tempore odio quas expedita,
+              quos nostrum iusto officia aliquid beatae obcaecati eius
+              voluptatum rem tempora, dignissimos odit in delectus, reiciendis
+              eaque? Hic qui quasi quam minus molestias ullam dolor magni est
+              autem nesciunt! Debitis repellat eligendi error sapiente suscipit
+              odit pariatur fugiat nulla, praesentium itaque mollitia id? Ea
+              harum quaerat, cupiditate pariatur tempora eos corrupti enim optio
+              modi nesciunt, at suscipit, esse quibusdam officiis dignissimos
+              aliquid quae sint saepe magnam minus voluptatibus."
+            >
+              Employment History
+            </p>
           </div>
         </div>
         <a class="arrow arrow--page2" href="#projects"
@@ -190,99 +220,119 @@
       </main>
     </section>
     <section id="projects" class="page page3">
-        <div class="container">
-            <div class="card page3__card-1">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
-            <div class="card page3__card-2">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
-            <div class="card page3__card-3">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
-            <div class="card page3__card-4">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
-            <div class="card page3__card-5">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
-            <div class="card page3__card-6">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
-            <div class="card page3__card-7">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
-            <div class="card page3__card-8">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
-            <div class="card page3__card-9">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
-            <div class="card page3__card-10">
-                <div class="page3__card--img"></div>
-                <div class="page3__card--info">
-                    <h3>My Project</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <a href="#projects"><i class="fas fa-external-link-alt fa-3x"></i></a>
-                </div>
-            </div>
+      <div class="page3__container">
+        <div class="card page3__card-1">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
+            ></a>
+          </div>
         </div>
-        <nav id="contact" class="followMe page3__followMe">
-            <a href="https://www.facebook.com/revital.maor.3/" target="_blank"
-              ><i class="fab fa-facebook fa-3x"></i
+        <div class="card page3__card-2">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
             ></a>
-            <a href="http://www.linkedin.com/in/revital-maor" target="_blank"
-              ><i class="fab fa-linkedin fa-3x"></i
+          </div>
+        </div>
+        <div class="card page3__card-3">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
             ></a>
-            <a href="https://github.com/revital-m" target="_blank"
-              ><i class="fab fa-github fa-3x"></i
+          </div>
+        </div>
+        <div class="card page3__card-4">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
             ></a>
-          </nav>
+          </div>
+        </div>
+        <div class="card page3__card-5">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card page3__card-6">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card page3__card-7">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card page3__card-8">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card page3__card-9">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card page3__card-10">
+          <div class="page3__card--img"></div>
+          <div class="page3__card--info">
+            <h3>My Project</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#projects"
+              ><i class="fas fa-external-link-alt fa-3x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <nav id="contact" class="followMe page3__followMe">
+        <a href="https://www.facebook.com/revital.maor.3/" target="_blank"
+          ><i class="fab fa-facebook fa-3x"></i
+        ></a>
+        <a href="http://www.linkedin.com/in/revital-maor" target="_blank"
+          ><i class="fab fa-linkedin fa-3x"></i
+        ></a>
+        <a href="https://github.com/revital-m" target="_blank"
+          ><i class="fab fa-github fa-3x"></i
+        ></a>
+      </nav>
     </section>
     <!-- <footer id="contact" class="page page4"></footer> -->
   </body>
