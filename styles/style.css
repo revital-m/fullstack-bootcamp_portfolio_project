@@ -66,7 +66,8 @@ body {
 .navbar .navbar__links {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
+  opacity: 0.8;
 }
 
 .navbar .navbar__links a {
@@ -76,6 +77,44 @@ body {
   font-weight: 600;
   padding-top: 1.7rem;
   text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar .navbar__links a::after {
+  content: "";
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  height: 6%;
+  width: 100%;
+  background: #a7c2bf;
+}
+
+.navbar .navbar__links a::before {
+  content: "";
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  height: 6%;
+  width: 100%;
+  background: #a7c2bf;
+}
+
+.navbar__links--border::after {
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.5s ease;
+}
+.navbar__links--border::before {
+  transform: scale(0, 1);
+  transform-origin: 100% 0%;
+  transition: transform 0.5s ease;
+}
+
+.navbar__links--border:hover:after,
+.navbar__links--border:hover:before {
+  transform: scale(1, 1);
 }
 
 /*********************** page 1 ***********************/
