@@ -6,7 +6,10 @@
   --secondary-color: #696969;
   --light-color: #f3f3f3;
   --dark-color: #333;
-  /* --max-width: 1100px; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -103,8 +106,7 @@ body {
   opacity: 0.3;
 }
 
-/******** page 2 film right & left ********/
-.page2__film--right,
+/******** page 2 film left ********/
 .page2__film--left {
   padding: 0 2.5rem;
   margin-left: 1rem;
@@ -112,22 +114,15 @@ body {
   overflow: hidden;
 }
 
-.page2__film--right {
+.page2__film--left {
   background: url(../assets/img/imgbin_filmstrip-film-frame-2-png.png) repeat-y
     left center/ contain;
 }
 
-.page2__film--left {
-  background: url(../assets/img/imgbin_filmstrip-film-frame-3-png.png) repeat-y
-    right center/ contain;
-}
-
-.page2__film--right--bg,
 .page2__film--left--bg {
   background: #3a383a;
 }
 
-.page2 .page2__film--right .page2__film--right--bg img,
 .page2 .page2__film--left .page2__film--left--bg img {
   padding: 0.2rem 0;
   border-radius: 10%;
@@ -142,11 +137,11 @@ body {
   animation-delay: 5s;
 }
 
-/* @keyframes film {
+@keyframes film {
   to {
     transform: translateY(-4135%);
   }
-} */
+}
 
 /******* page 2 main *******/
 .page2__main {
@@ -232,6 +227,7 @@ body {
   font-size: 2rem;
   line-height: 1.4;
   padding: 5rem 4rem;
+  overflow: hidden;
 }
 
 .page2__main__about--btn2 p::before {
@@ -250,6 +246,7 @@ body {
   font-size: 2rem;
   line-height: 1.4;
   padding: 5rem 4rem;
+  overflow: hidden;
 }
 
 .page2__main__about--btn1 p:hover:before,
@@ -278,7 +275,6 @@ body {
 
 .page3__container {
   display: grid;
-  max-width: 90vw;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
   overflow: hidden;
@@ -335,7 +331,7 @@ body {
   right: 0;
 }
 
-/* .page3__card-1 .page3__card--img {
+.page3__card-1 .page3__card--img {
   background: url("../assets/img/progremming/chris-ried-ieic5Tq8YMk-unsplash.jpg")
     no-repeat center center/cover;
 }
@@ -383,7 +379,7 @@ body {
 .page3__card-10 .page3__card--img {
   background: url("../assets/img/progremming/timothy-dykes-LhqLdDPcSV8-unsplash.jpg")
     no-repeat center center/cover;
-} */
+}
 
 .page3__followMe {
   position: absolute;

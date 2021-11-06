@@ -1,35 +1,109 @@
-@media (max-width: 769px) {
-  /*********************** Navbar ***********************/
-
+@media (max-width: 1088px) {
   /*********************** page 1 ***********************/
   .page1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
-    background: url(../assets/img/erica-steeves-5D4s0Asiv_Y-unsplash.jpg)
-      no-repeat center center/cover;
   }
 
   /*********************** page 2 ***********************/
+  .page2 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /******** page 2 film bottom********/
+  .page2__film--left {
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    width: 795vw;
+    height: 18.3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page2__film--left {
+    background: url("/assets/img/imgbin_filmstrip-film-frame-png-1.png")
+      repeat-x center center/ contain;
+  }
+
+  .page2__film--left--bg {
+    height: 12.2rem;
+  }
+
+  .page2 .page2__film--left .page2__film--left--bg img {
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 5rem;
+    border-radius: 10%;
+    height: 12.9rem;
+    width: 13rem;
+    transform: translateX(0);
+    animation-name: film;
+    animation-duration: 40s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+  }
+
+  @keyframes film {
+    to {
+      transform: translateX(-4000%);
+    }
+  }
+
+  /******* page 2 main *******/
+
+  .page2__main .page2__main--profile_img {
+    height: 30vh;
+    width: 41vw;
+    margin-top: 5rem;
+  }
+
+  .page2__main__about--btn1 p,
+  .page2__main__about--btn2 p {
+    font-size: 1.5rem;
+    width: 23vw;
+  }
+
+  .page2__main__about--btn1 p::before {
+    height: 47vh;
+    width: 66vw;
+    position: absolute;
+    top: -2vh;
+    left: 23vh;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 5rem 4rem;
+    overflow: hidden;
+  }
+
+  .page2__main__about--btn2 p::before {
+    content: attr(data-p);
+    height: 47vh;
+    width: 66vw;
+    position: absolute;
+    top: -2vh;
+    left: -6vh;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 5rem 4rem;
+    overflow: hidden;
+  }
+
+  /****** page 2 main arrow ******/
+  .arrow--page2 i {
+    left: 49%;
+    bottom: 19%;
+  }
 
   /*********************** page 3 ***********************/
   .page3 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 100vw;
     min-height: 100vh;
-    z-index: 1;
-    background: var(--light-blue-color);
   }
 
   .page3__container {
@@ -79,20 +153,187 @@
     font-size: 2.5rem;
   }
 
+  /*********************** page 2 ***********************/
+
+  /******** page 2 film bottom********/
+  .page2__film--left {
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+    width: 795vw;
+    height: 12rem;
+  }
+  .page2__film--left--bg {
+    height: 7.8rem;
+  }
+
+  .page2 .page2__film--left .page2__film--left--bg img {
+    padding: 0rem 0.3rem;
+    margin-bottom: 5rem;
+    height: 8rem;
+    width: 10rem;
+  }
+
+  @keyframes film {
+    to {
+      transform: translateX(-2600%);
+    }
+  }
+
+  /******* page 2 main *******/
+  .page2__main .page2__main--profile_img {
+    height: 30vh;
+    width: 70vw;
+    margin-top: 11rem;
+  }
+
+  .page2__main > p {
+    padding: 4rem 3rem;
+  }
+
+  /****** page 2 main btn ******/
+  .page2__main__about {
+    padding-top: 0;
+  }
+
+  .page2__main__about--btn1 p {
+    padding: 2rem 1rem;
+    width: 29vw;
+  }
+
+  .page2__main__about--btn2 p {
+    width: 29vw;
+  }
+
+  .page2__main__about--btn1 p::before {
+    height: 51vh;
+    width: 81vw;
+    top: -2vh;
+    left: 17vh;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .page2__main__about--btn2 p::before {
+    height: 51vh;
+    width: 81vw;
+    top: -2vh;
+    left: -4vh;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  /****** page 2 main arrow ******/
+  .arrow--page2 i {
+    left: 46%;
+    bottom: 17%;
+  }
+
   /*********************** page 3 ***********************/
   .page3__container {
     display: grid;
     max-width: 90vw;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1rem;
-    overflow: hidden;
-    height: 100%;
-    margin: 10rem 0;
+    margin-top: 13rem;
   }
 
   .page3__followMe {
-    position: absolute;
-    bottom: 1rem;
-    left: 30%;
+    left: 31%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-height: 670px) {
+  /*********************** Navbar ***********************/
+  .navbar .navbar__links {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .menu-wrap .menu > div > div {
+    padding-top: 0.3rem;
+  }
+
+  .menu-wrap .menu > div > div > ul > li > a {
+    font-size: 1.5rem;
+  }
+
+  /*********************** page 2 ***********************/
+
+  /******** page 2 film bottom********/
+  .page2__film--left {
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+    width: 795vw;
+    height: 10rem;
+  }
+  .page2__film--left--bg {
+    height: 6.5rem;
+  }
+
+  .page2 .page2__film--left .page2__film--left--bg img {
+    padding: 0rem 0.3rem;
+    margin-bottom: 7rem;
+    height: 6.5rem;
+    width: 10rem;
+  }
+
+  /******* page 2 main *******/
+  .page2__main .page2__main--profile_img {
+    height: 26vh;
+    width: 50vw;
+    margin-top: 5rem;
+  }
+
+  .page2__main > p {
+    padding: 1rem;
+    font-size: 1.7rem;
+  }
+
+  /****** page 2 main btn ******/
+  .page2__main__about {
+    padding-top: 0;
+  }
+
+  .page2__main__about--btn1 p {
+    padding: 2rem 1rem;
+    width: 29vw;
+    font-size: 1.3rem;
+  }
+
+  .page2__main__about--btn2 p {
+    width: 29vw;
+    font-size: 1.3rem;
+  }
+
+  .page2__main__about--btn1 p::before {
+    height: 37vh;
+    width: 81vw;
+    top: -2vh;
+    left: 20.5vh;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  .page2__main__about--btn2 p::before {
+    height: 37vh;
+    width: 81vw;
+    top: -2vh;
+    left: -5vh;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  /****** page 2 main arrow ******/
+  .arrow--page2 i {
+    left: 46%;
+    bottom: 21%;
   }
 }
