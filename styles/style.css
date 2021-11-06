@@ -176,11 +176,11 @@ body {
   animation-delay: 5s;
 }
 
-/* @keyframes film {
+@keyframes film {
   to {
     transform: translateY(-4135%);
   }
-} */
+}
 
 /******* page 2 main *******/
 .page2__main {
@@ -334,13 +334,9 @@ body {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  cursor: pointer;
 
-  /* animation */
-  /* transform: skewY(-10deg); */
-  /* transform: skew(10deg); */
-  /* transform: translateX(0) translateY(0); */
-  transition: all 2s ease-in-out;
-  transform: scale(1);
+  /* transform: scale(1); */
 }
 
 /* .card::after {
@@ -364,8 +360,9 @@ body {
 .card:hover {
   height: 40rem;
   width: 25rem;
+  transition: all 1s ease-in-out;
   /* transform: scale(2); */
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .page3__card--img {
