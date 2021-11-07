@@ -171,7 +171,7 @@ body {
 }
 
 /****** page 2 main btn ******/
-.page2__main__about {
+/* .page2__main__about {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -252,6 +252,123 @@ body {
 .page2__main__about--btn1 p:hover:before,
 .page2__main__about--btn2 p:hover:before {
   --scale: 1;
+} */
+
+/* trying something new */
+.page2__main__about--btn1 {
+  position: absolute;
+  top: 84%;
+  left: 42%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.page2__main__about--btn1 .humburger .checkbox__name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 0 8vw;
+  width: 15vw;
+  background: var(--secondary-color);
+  border: 0.2rem var(--primary-color-dark) solid;
+  border-radius: 1.5rem;
+  position: relative;
+  color: var(--light-color);
+}
+
+.page2__main__about--btn1 .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.page2__main__about--btn1 .humburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Show Menu */
+.page2__main__about--btn1 .toggler:checked ~ .menu {
+  visibility: visible;
+  transform: scale(1);
+  transition: scale 1s ease-in-out;
+}
+
+.page2__main__about--btn1 .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 1s;
+}
+
+.page2__main__about--btn1 .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.page2__main__about--btn1 .menu {
+  position: absolute;
+  bottom: 0.5rem;
+  left: -29rem;
+  height: 18vh;
+  width: 66vw;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dfccb1;
+  border-radius: 1.5rem;
+  color: var(--dark-color);
+}
+
+.page2__main__about--btn1 .menu > div {
+  background: #dfccb1;
+  border-radius: 50%;
+  width: 300vw;
+  height: 300vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.page2__main__about--btn1 .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.page2__main__about--btn1 .menu > div > div > ul {
+  display: flex;
+}
+.page2__main__about--btn1 .menu > div > div > ul > li {
+  list-style: none;
+  color: var(--dark-color);
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 0 3vw;
+  /* border: 2px black solid; */
+  height: 16vh;
+  width: 8vw;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px #d5bc99;
 }
 
 /****** page 2 main arrow ******/
