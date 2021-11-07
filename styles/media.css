@@ -183,11 +183,12 @@
   .page2__main .page2__main--profile_img {
     height: 30vh;
     width: 70vw;
-    margin-top: 11rem;
+    margin-top: 5rem;
+    padding-bottom: 1rem;
   }
 
   .page2__main > p {
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
   }
 
   /****** page 2 main btn ******/
@@ -196,7 +197,7 @@
   }
 
   .page2__main__about--btn1 p {
-    padding: 2rem 1rem;
+    padding: 1rem;
     width: 29vw;
   }
 
@@ -205,7 +206,7 @@
   }
 
   .page2__main__about--btn1 p::before {
-    height: 51vh;
+    height: 53vh;
     width: 81vw;
     top: -2vh;
     left: 17vh;
@@ -216,7 +217,7 @@
   }
 
   .page2__main__about--btn2 p::before {
-    height: 51vh;
+    height: 53vh;
     width: 81vw;
     top: -2vh;
     left: -4vh;
@@ -299,7 +300,7 @@
   }
 
   .page2__main__about--btn1 p {
-    padding: 2rem 1rem;
+    padding: 1rem;
     width: 29vw;
     font-size: 1.3rem;
   }
