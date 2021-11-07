@@ -260,7 +260,7 @@ body {
   top: 84%;
   left: 42%;
   cursor: pointer;
-  z-index: 100;
+  /* z-index: 100; */
 }
 
 .page2__main__about--btn1 .humburger .checkbox__name {
@@ -332,6 +332,7 @@ body {
   background: #dfccb1;
   border-radius: 1.5rem;
   color: var(--dark-color);
+  z-index: 2;
 }
 
 .page2__main__about--btn1 .menu > div {
@@ -363,7 +364,7 @@ body {
   color: var(--dark-color);
   font-size: 2rem;
   padding: 2rem;
-  margin: 0 3vw;
+  margin: 0 2vw;
   /* border: 2px black solid; */
   height: 16vh;
   width: 8vw;
