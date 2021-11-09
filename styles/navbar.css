@@ -23,6 +23,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   opacity: 0.8;
+  padding-right: 2.4rem;
 }
 
 .navbar .navbar__links a {
@@ -100,6 +101,7 @@
   width: 60px;
   height: 60px;
   padding: 1rem;
+  margin: 2rem 2rem 0 0;
   background: var(--secondary-color);
   display: flex;
   align-items: center;
